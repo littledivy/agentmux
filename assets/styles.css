@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  background: #1c1c1e;
+  overflow: hidden;
+}
+
+/* Window drag regions for the transparent title bar (CEF honors
+   -webkit-app-region). Buttons opt out so they stay clickable. */
+.app-drag {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+.app-no-drag {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}
+
+/* Hide the xterm scrollbar — clean, like a native terminal. */
+.xterm-viewport {
+  scrollbar-width: none;
+}
+.xterm-viewport::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+/* A little breathing room inside each terminal. */
+.xterm {
+  padding: 4px 6px;
+}
+.fresh-gradient {
+  background-color: rgb(134, 239, 172);
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(219, 234, 254),
+    rgb(187, 247, 208),
+    rgb(254, 249, 195)
+  );
+}

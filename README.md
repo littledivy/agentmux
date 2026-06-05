@@ -1,12 +1,11 @@
-# agentmux
 
-A terminal-sessions dashboard for coding agents — tmux-backed, runs as a
-native macOS desktop app. A sidebar of workspaces, tabbed and splittable
+<img width="1657" height="1039" alt="image" src="https://github.com/user-attachments/assets/db0f3bf9-7cc6-403b-9b7b-a49358cd6ec9" />
+
+
+A tmux-backed terminal, runs as a desktop app. A sidebar of workspaces, tabbed and splittable
 terminal panes, with live Claude / Codex status and notifications.
 
-Built with [Fresh](https://fresh.deno.dev) (Deno + Preact) and
-[xterm.js](https://xtermjs.org), rendered natively via `deno desktop`
-([WEF](https://github.com/littledivy/just-wef)).
+Built natively via `deno desktop`.
 
 ## Features
 
@@ -16,35 +15,20 @@ Built with [Fresh](https://fresh.deno.dev) (Deno + Preact) and
   (`tmux -L agentmux attach -t <name>`).
 - **Agent-aware** — detects Claude / Codex, shows working / idle / needs-input
   state, and names tabs by the agent or the current directory.
-- **Native notifications + dock badge** when a background agent finishes a turn
+- **Notifications** when a background agent finishes a turn
   or needs input.
-- Rename anything (double-click), auto-reconnecting terminals, clean macOS
-  chrome with a unified title bar.
 
-## Requirements
+## Building from source
 
 - [Deno](https://deno.com) 2.x
 - [tmux](https://github.com/tmux/tmux) — `brew install tmux`
 
-## Develop (in the browser)
-
-```sh
-deno task dev
-```
-
-Then open http://localhost:5173.
-
-## Desktop app
-
-Requires the `deno desktop` subcommand (the WEF backend).
+Requires the `deno desktop` subcommand.
 
 ```sh
 deno task build
 deno desktop -A --hmr .
 ```
-
-The unified transparent title bar uses a custom WEF window flag — see
-[just-wef](https://github.com/littledivy/just-wef).
 
 ## License
 

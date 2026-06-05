@@ -9,7 +9,7 @@ Built natively via `deno desktop`. Inspired by cmux.com
 
 [![Download for macOS](https://img.shields.io/badge/Download_for_macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/littledivy/agentmux/releases/latest/download/agentmux.dmg)
 
-Signed + notarized. Open the `.dmg`, drag to Applications. Requires
+Requires
 [tmux](https://github.com/tmux/tmux) (`brew install tmux`).
 
 ## Features
@@ -26,12 +26,10 @@ Signed + notarized. Open the `.dmg`, drag to Applications. Requires
 ## Building from source
 
 - [Deno](https://deno.com) 2.x
-- [tmux](https://github.com/tmux/tmux) — `brew install tmux`
 
 Requires the `deno desktop` subcommand.
 
 ```sh
-deno task build
 deno desktop -A --hmr .
 ```
 

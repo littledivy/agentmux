@@ -5,7 +5,7 @@
 A tmux-backed terminal, runs as a desktop app. A sidebar of workspaces, tabbed and splittable
 terminal panes, with live Claude / Codex status and notifications.
 
-Built natively via `deno desktop`.
+Built natively via `deno desktop`. Inspired by cmux.com
 
 ## Features
 

@@ -7,6 +7,11 @@ terminal panes, with live Claude / Codex status and notifications.
 
 Built natively via `deno desktop`. Inspired by cmux.com
 
+[![Download for macOS](https://img.shields.io/badge/Download_for_macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/littledivy/agentmux/releases/latest/download/agentmux.dmg)
+
+Signed + notarized. Open the `.dmg`, drag to Applications. Requires
+[tmux](https://github.com/tmux/tmux) (`brew install tmux`).
+
 ## Features
 
 - **Workspaces → tabs → split panes** — drag the dividers to resize.
